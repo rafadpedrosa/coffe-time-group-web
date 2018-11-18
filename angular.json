@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "coffe-time-group-web"
+  "defaultProject": "coffe-time-group-web",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
