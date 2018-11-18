@@ -21,6 +21,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(({ coffeeLeft }) => this.coffeeLeft = coffeeLeft);
   }
 
+  coffeeDone() {
+    this.coffeeLeft = 0;
+    this.changeStatus(100);
+  }
+
+  changeStatus(value) {
+    this.coffeeLeft += value;
+    this.coffeeService.updateCoffeeStatus({ coffeeLeft: this.coffeeLeft });
+  }
+
   ngOnDestroy() {
     this.coffeeLeftSubscription.unsubscribe();
   }

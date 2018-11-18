@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Subject } from 'rxjs';
 
@@ -12,5 +12,10 @@ export class CoffeeService {
     this.db.doc('coffeeStatus/ldztzXbK8IHwGKuZjg5b')
     .valueChanges()
     .subscribe(response => this.coffeeLeftSubject.next(response));
+  }
+
+  updateCoffeeStatus(coffeeStatus) {
+    this.db.doc('coffeeStatus/ldztzXbK8IHwGKuZjg5b')
+    .update(coffeeStatus);
   }
 }
