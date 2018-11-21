@@ -10,7 +10,7 @@ So! After 6 moths of use, it starts to have some problens mainly because of the 
 
 R.I.P - Coffee maker nº1
 
-We bought another coffee make - coffe maker nº2 - and we are avoiding the misuse! We are paying attention, trying to be alert in the end of the day and torning off it. Despite that, we still forgetting to turning it off. Not as much as we was before, but we still forgeting.
+We bought another coffee make - coffe maker nº2 - and we are avoiding the misuse! We are paying attention, trying to be alert in the end of the day and turning off it. Despite that, we still forgetting to turning it off. Not as much as we was before, but we still forgeting.
 
 But that history is just one problem. 
 
@@ -22,7 +22,7 @@ How many money we have left (yes! We all chipped in to have money for coffe bags
 
 So, I think: well I'm a developer trying to improove my github which love to study and learn new techs and... Why not create a program to solve our problem? Hmmmm... LETZ DO THAT! 
 
-So, for now, what I want to solve for now is:
+So, for now, what I want to solve is:
 
 0. cofig to set values for the system
 1. Coffe left
