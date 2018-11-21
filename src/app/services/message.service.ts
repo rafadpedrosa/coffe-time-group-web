@@ -76,7 +76,7 @@ export class MessageService {
     const body = {
       'notification': {
         'title': 'Turma do Café',
-        'body': 'O café está pronto!',
+        'body': 'Coffee will be ready in 15 min!',
         'icon': 'https://free-images.com/lg/cd8a/coffee_foam_hart_cappuccino.jpg'
       },
       'to': '/topics/coffee_alert'
