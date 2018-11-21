@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { CoffeeService } from '../services/coffee.service';
+import { MessageService } from '../services/message.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +14,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   private coffeeLeftSubscription: Subscription;
 
-  constructor(private coffeeService: CoffeeService) {
+  constructor(private coffeeService: CoffeeService, private messageService: MessageService) {
   }
 
   ngOnInit() {
@@ -24,7 +25,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   coffeeDone() {
     this.coffeeLeft = 0;
     this.changeStatus(100);
-  }
+    this.messageService.notifyCoffeeFifthMinutes();
+}
 
   changeStatus(value) {
     this.coffeeLeft += value;
