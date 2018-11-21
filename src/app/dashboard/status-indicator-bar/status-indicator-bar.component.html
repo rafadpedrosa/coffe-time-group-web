@@ -2,7 +2,10 @@
 <div class="progress">
   <div class="progress-bar"
        role="progressbar"
+       [class.bg-success]="statusIndicator > 80"
+       [class.bg-warning]="statusIndicator < 50"
+       [class.bg-danger]="statusIndicator < 30"
        [style.width]="statusIndicator + '%'"
        aria-valuemin="0"
-       aria-valuemax="100"></div>
+       aria-valuemax="100"> {{ statusIndicator + '%' }}</div>
 </div>
