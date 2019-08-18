@@ -3,12 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 const firebaseConfig = {
-  apiKey: 'KEY_APP',
-  authDomain: 'authDomain',
-  databaseURL: 'databaseURL',
-  projectId: 'projectId',
-  storageBucket: 'storageBucket',
-  messagingSenderId: 'messagingSenderId'
+  apiKey: 'AAAAyib2edw:APA91bFwRD9oF955HZTbovd-vImuzR7GnxraWBj8ZnJGQzfjYQtJgNy2Pm3MgeJgznSzNCYjV68n9oFLdhWLG2EpnUZT3iDYmv7iP_ovKNRWQ30vgiTU4kdRBWmtIT69p5moLqsyNCLk',
+  authDomain: 'coffe-time-company-group.firebaseapp.com',
+  databaseURL: 'https://coffe-time-company-group.firebaseio.com',
+  projectId: 'coffe-time-company-group',
+  storageBucket: 'coffe-time-company-group.appspot.com',
+  messagingSenderId: '868237081052'
 };
 
 export const environment = {
